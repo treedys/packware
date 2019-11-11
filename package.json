@@ -1,0 +1,55 @@
+{
+  "name": "@treedys/packware",
+  "version": "1.0.0",
+  "description": "Webpack automation",
+  "main": "index.js",
+  "bin": {
+    "packware": "./index.js"
+  },
+  "scripts": {
+    "prepack": "npm install",
+    "postpack": "postpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treedys/packware.git"
+  },
+  "keywords": [
+    "webpack",
+    "babel",
+    "automation"
+  ],
+  "author": "Atanas Palavrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/treedys/packware/issues"
+  },
+  "homepage": "https://github.com/treedys/packware#readme",
+  "devDependencies": {
+    "postpack": "github:treedys/postpack"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-decorators": "^7.7.0",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "debug": "^4.1.1",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
