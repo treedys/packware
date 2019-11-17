@@ -1,6 +1,6 @@
 {
   "name": "@treedys/packware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack automation",
   "main": "index.js",
   "bin": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/treedys/packware#readme",
   "devDependencies": {
-    "postpack": "github:treedys/postpack"
+    "@treedys/postpack": "^1.0.0"
   },
   "dependencies": {
     "@babel/core": "^7.7.2",
