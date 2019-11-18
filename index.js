@@ -16,13 +16,29 @@ const options = {
     mode: !TARGET || TARGET==="start" || TARGET==="debug" ? 'development' : 'production'
 };
 
-const configs = Object.entries(package.packware).map( ([name, config]) => {
-    switch(config.target) {
+const configs = Object.entries(package.packware).map( ([name, packageConfig]) => {
+    let config;
+    switch(packageConfig.target) {
         case 'node':
-            return require('./node.js')(name, config, options);
+            config = require('./node.js')(name, packageConfig, options);
+            break;
         case 'react':
-            return require('./react.js')(name, config, options);
+            config = require('./react.js')(name, packageConfig, options);
+            break;
+        case undefined:
+            console.error("WEBPACK: Undefined target");
+            process.exit(1);
+            break;
+        default:
+            console.error(`WEBPACK: Unknown target ${packageConfig.target}`);
+            process.exit(1);
+            break;
     }
+
+    if( packageConfig.plugin )
+        config = [].concat(packageConfig.plugin).reduce( (config, plugin) => require(path.resolve(plugin))(config, options), config);
+
+    return config;
 });
 
 const compiler = webpack(configs);
