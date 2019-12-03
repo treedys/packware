@@ -71,8 +71,17 @@ module.exports = (name, config, options) => {
         exclude: config.assets
     };
 
+    const svgLoader = {
+        test: /\.svg$/,
+        loader: "file-loader",
+        options: {
+            name: `${templateName}.[ext]`
+        },
+        exclude: config.assets
+    };
+
     const urlLoader = {
-        test: /\.(jpe?g|png|gif|svg|eot|woff|ttf|woff2|wav|mp3)$/,
+        test: /\.(jpe?g|png|gif|eot|woff|ttf|woff2|wav|mp3)$/,
         loader: "url-loader",
         options: {
             limit: 10000,
@@ -109,7 +118,7 @@ module.exports = (name, config, options) => {
                 cssLoader,
                 ...config.assets?[staticFilesLoader]:[],
                 htmlLoader,
-                options.mode=="development" ? fileLoader : urlLoader
+                ...options.mode=="development" ? [fileLoader] : [svgLoader,urlLoader]
             ]
         },
         optimization: { splitChunks: { chunks: "all" } },
