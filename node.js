@@ -41,10 +41,6 @@ module.exports = (name, config, options) => {
             filename: "[name].js"
         },
         module: { rules: [ jsLoader ] },
-        ...(
-            options.mode=="development"
-            ? { devtool: 'source-map' }
-            : { optimization: { minimize: true, } }
-        )
+        ...( options.mode=="development" ? { devtool: config.devtool || 'source-map' } : {})
     };
 }

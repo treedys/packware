@@ -121,7 +121,7 @@ module.exports = (name, config, options) => {
                 ...options.mode=="development" ? [fileLoader] : [svgLoader,urlLoader]
             ]
         },
-        optimization: { splitChunks: { chunks: "all" } },
+        ...( options.mode=="development" ? { devtool: config.devtool || 'source-map' } : {})
         plugins: [
             new CleanWebpackPlugin(),
             new HtmlWebpackPlugin({

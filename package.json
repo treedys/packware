@@ -1,6 +1,6 @@
 {
   "name": "@treedys/packware",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Webpack automation",
   "main": "index.js",
   "bin": {
