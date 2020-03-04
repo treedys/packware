@@ -13,17 +13,18 @@ const package = JSON.parse(fs.readFileSync('./package.json'));
 const TARGET = process.env.npm_lifecycle_event;
 
 const options = {
-    mode: !TARGET || TARGET==="start" || TARGET==="debug" ? 'development' : 'production'
+    mode: !TARGET || TARGET==="start" || TARGET==="debug" ? 'development' : 'production',
+    ... package.packware.options
 };
 
 const configs = Object.entries(package.packware).map( ([name, packageConfig]) => {
     let config;
     switch(packageConfig.target) {
         case 'node':
-            config = require('./node.js')(name, packageConfig, options);
+            config = require('./node.js')(name, packageConfig, { ...options, ...packageConfig.options });
             break;
         case 'react':
-            config = require('./react.js')(name, packageConfig, options);
+            config = require('./react.js')(name, packageConfig, { ...options, ...packageConfig.options });
             break;
         case undefined:
             console.error("WEBPACK: Undefined target");
