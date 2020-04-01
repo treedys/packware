@@ -26,6 +26,8 @@ const configs = Object.entries(package.packware).map( ([name, packageConfig]) =>
         case 'react':
             config = require('./react.js')(name, packageConfig, { ...options, ...packageConfig.options });
             break;
+        case 'options':
+            break;
         case undefined:
             console.error("WEBPACK: Undefined target");
             process.exit(1);
