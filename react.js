@@ -9,7 +9,7 @@ module.exports = (name, config, options) => {
     const templateName      = options.mode=="development" ? "[name]" : "[name].[hash:8]";
     const templateChunkName = options.mode=="development" ? "[name]" : "[name].[contenthash:8]";
     const indexHtmlTemplate = path.resolve(__dirname, "index.html");
-    const assetsFileExtentions = [ 'jpg', 'jpeg', 'png', 'gif', 'eot', 'woff', 'ttf', 'woff2', 'wav', 'mp3', ... ([].concat(config.assetsFileExtentions??[])) ];
+    const assetsFileExtentions = [ 'jpg', 'jpeg', 'png', 'gif', 'eot', 'woff', 'ttf', 'woff2', 'wav', 'mp3', ... ([].concat(config.assetsFileExtentions||[])) ];
 
     const jsxLoader = {
         test: /\.(js|jsx)$/,
