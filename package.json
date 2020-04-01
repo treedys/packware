@@ -1,6 +1,6 @@
 {
   "name": "@treedys/packware",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Webpack automation",
   "main": "index.js",
   "bin": {
@@ -45,7 +45,7 @@
     "debug": "^4.1.1",
     "file-loader": "^6.0.0",
     "html-loader": "^1.0.0",
-    "html-webpack-plugin": "^4.0.1",
+    "html-webpack-plugin": "^4.0.4",
     "mini-css-extract-plugin": "^0.9.0",
     "url-loader": "^4.0.0",
     "webpack": "^4.42.1",
