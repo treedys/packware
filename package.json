@@ -1,6 +1,6 @@
 {
   "name": "@treedys/packware",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "Webpack automation",
   "main": "index.js",
   "bin": {
@@ -26,30 +26,30 @@
   },
   "homepage": "https://github.com/treedys/packware#readme",
   "devDependencies": {
-    "@treedys/postpack": "^1.0.3"
+    "@treedys/postpack": "^1.0.4"
   },
   "dependencies": {
-    "@babel/core": "^7.10.3",
-    "@babel/plugin-proposal-class-properties": "^7.10.1",
-    "@babel/plugin-proposal-decorators": "^7.10.3",
-    "@babel/plugin-proposal-export-default-from": "^7.10.1",
-    "@babel/plugin-proposal-export-namespace-from": "^7.10.1",
-    "@babel/plugin-proposal-object-rest-spread": "^7.10.3",
-    "@babel/plugin-proposal-optional-chaining": "^7.10.3",
-    "@babel/polyfill": "^7.10.1",
-    "@babel/preset-env": "^7.10.3",
-    "@babel/preset-react": "^7.10.1",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.6.0",
+    "css-loader": "^4.3.0",
     "debug": "^4.1.1",
-    "file-loader": "^6.0.0",
-    "html-loader": "^1.1.0",
-    "html-webpack-plugin": "^4.3.0",
-    "mini-css-extract-plugin": "^0.9.0",
+    "file-loader": "^6.1.0",
+    "html-loader": "^1.3.0",
+    "html-webpack-plugin": "^4.4.1",
+    "mini-css-extract-plugin": "^0.11.2",
     "url-loader": "^4.1.0",
-    "webpack": "^4.43.0",
-    "webpack-merge": "^4.2.2",
-    "webpack-node-externals": "^1.7.2"
+    "webpack": "^4.44.2",
+    "webpack-merge": "^5.1.4",
+    "webpack-node-externals": "^2.5.2"
   }
 }
