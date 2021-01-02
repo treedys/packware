@@ -1,6 +1,6 @@
 {
   "name": "@treedys/packware",
-  "version": "1.3.6",
+  "version": "1.3.7",
   "description": "Webpack automation",
   "main": "index.js",
   "bin": {
@@ -29,27 +29,27 @@
     "@treedys/postpack": "^1.0.4"
   },
   "dependencies": {
-    "@babel/core": "^7.12.3",
+    "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "@babel/plugin-proposal-decorators": "^7.12.12",
     "@babel/plugin-proposal-export-default-from": "^7.12.1",
     "@babel/plugin-proposal-export-namespace-from": "^7.12.1",
     "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
-    "@babel/plugin-proposal-optional-chaining": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
     "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.5",
-    "babel-loader": "^8.2.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
-    "debug": "^4.2.0",
+    "debug": "^4.3.1",
     "file-loader": "^6.2.0",
     "html-loader": "^1.3.2",
-    "html-webpack-plugin": "^5.0.0-alpha.14",
-    "mini-css-extract-plugin": "^1.3.1",
+    "html-webpack-plugin": "^5.0.0-beta.1",
+    "mini-css-extract-plugin": "^1.3.3",
     "url-loader": "^4.1.1",
-    "webpack": "^5.5.1",
-    "webpack-merge": "^5.4.0",
+    "webpack": "^5.11.1",
+    "webpack-merge": "^5.7.3",
     "webpack-node-externals": "^2.5.2"
   }
 }
