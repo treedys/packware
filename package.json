@@ -1,6 +1,6 @@
 {
   "name": "@treedys/packware",
-  "version": "1.3.7",
+  "version": "2.0.0",
   "description": "Webpack automation",
   "main": "index.js",
   "bin": {
@@ -39,6 +39,7 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@babel/preset-typescript": "^7.12.7",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
@@ -47,6 +48,8 @@
     "html-loader": "^1.3.2",
     "html-webpack-plugin": "^5.0.0-beta.1",
     "mini-css-extract-plugin": "^1.3.3",
+    "source-map-loader": "^2.0.0",
+    "typescript": "^4.1.3",
     "url-loader": "^4.1.1",
     "webpack": "^5.11.1",
     "webpack-merge": "^5.7.3",

@@ -5,12 +5,13 @@ const nodeExternals = require('webpack-node-externals');
 module.exports = (name, config, options) => {
 
     const jsLoader = {
-        test: /\.(js)$/,
+        test: /\.([jt]s)$/,
         loader: "babel-loader",
         exclude: /(node_modules)/,
         options: {
             presets: [
-                [ "@babel/preset-env", { targets: config.targets, modules: false }]
+                [ "@babel/preset-env", { targets: config.targets, modules: false }],
+                "@babel/typescript"
             ],
             plugins: [
                 [ "@babel/proposal-decorators", { legacy: true } ],
@@ -26,7 +27,7 @@ module.exports = (name, config, options) => {
     return {
         mode: options.mode,
         resolve: {
-            extensions: [ ".js" ],
+            extensions: [ ".js", ".ts" ],
             modules: [ "node_modules" ]
         },
         // https://codeburst.io/use-webpack-with-dirname-correctly-4cad3b265a92

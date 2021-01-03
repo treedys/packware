@@ -12,7 +12,7 @@ module.exports = (name, config, options) => {
     const assetsFileExtentions = [ 'jpg', 'jpeg', 'png', 'gif', 'eot', 'woff', 'ttf', 'woff2', 'wav', 'mp3', ... ([].concat(config.assetsFileExtentions||[])) ];
 
     const jsxLoader = {
-        test: /\.(js|jsx)$/,
+        test: /\.([jt]s[x]?)$/,
         loader: "babel-loader",
         exclude: /(node_modules)/,
         options: {
@@ -27,6 +27,7 @@ module.exports = (name, config, options) => {
                         modules: false
                     }
                 ],
+                "@babel/typescript",
                 "@babel/preset-react"
             ],
             plugins: [
@@ -94,7 +95,7 @@ module.exports = (name, config, options) => {
     return {
         mode: options.mode,
         resolve: {
-            extensions: [ ".js", ".jsx" ],
+            extensions: [ ".js", ".jsx", ".ts", ".tsx" ],
             modules: [
                 "node_modules",
                 ... config.sourcePath ? path.resolve(config.sourcePath) : []
