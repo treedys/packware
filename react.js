@@ -12,7 +12,7 @@ module.exports = (name, config, options) => {
     const assetsFileExtentions = [ 'jpg', 'jpeg', 'png', 'gif', 'eot', 'woff', 'ttf', 'woff2', 'wav', 'mp3', ... ([].concat(config.assetsFileExtentions||[])) ];
 
     const jsxLoader = {
-        test: /\.([jt]s[x]?)$/,
+        test: /\.([jt]sx?)$/,
         loader: "babel-loader",
         exclude: /(node_modules)/,
         options: {
