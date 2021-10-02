@@ -1,6 +1,6 @@
 {
   "name": "@treedys/packware",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Webpack automation",
   "main": "index.js",
   "bin": {
@@ -26,33 +26,33 @@
   },
   "homepage": "https://github.com/treedys/packware#readme",
   "devDependencies": {
-    "@treedys/postpack": "^1.0.5"
+    "@treedys/postpack": "^1.0.6"
   },
   "dependencies": {
-    "@babel/core": "^7.13.15",
-    "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@babel/plugin-proposal-decorators": "^7.13.15",
-    "@babel/plugin-proposal-export-default-from": "^7.12.13",
-    "@babel/plugin-proposal-export-namespace-from": "^7.12.13",
-    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
-    "@babel/plugin-proposal-optional-chaining": "^7.13.12",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-decorators": "^7.15.4",
+    "@babel/plugin-proposal-export-default-from": "^7.14.5",
+    "@babel/plugin-proposal-export-namespace-from": "^7.14.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.15.6",
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
     "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.13.15",
-    "@babel/preset-react": "^7.13.13",
-    "@babel/preset-typescript": "^7.13.0",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
     "babel-loader": "^8.2.2",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.2.1",
-    "debug": "^4.3.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.3.0",
+    "debug": "^4.3.2",
     "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",
-    "html-webpack-plugin": "^5.3.1",
-    "mini-css-extract-plugin": "^1.4.1",
-    "source-map-loader": "^2.0.1",
-    "typescript": "^4.2.4",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.3.0",
+    "source-map-loader": "^3.0.0",
+    "typescript": "^4.4.3",
     "url-loader": "^4.1.1",
-    "webpack": "^5.31.2",
-    "webpack-merge": "^5.7.3",
-    "webpack-node-externals": "^2.5.2"
+    "webpack": "^5.56.0",
+    "webpack-merge": "^5.8.0",
+    "webpack-node-externals": "^3.0.0"
   }
 }
