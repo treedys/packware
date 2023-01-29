@@ -13,7 +13,7 @@ module.exports = (name, config, options) => {
                 [ "@babel/preset-env", {
                     targets: config.targets,
                     modules: false,
-                    useBuildIns: "usage",
+                    useBuiltIns: "usage",
                     corejs: {
                         version: "3.27",
                         proposal: true
