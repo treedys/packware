@@ -10,7 +10,15 @@ module.exports = (name, config, options) => {
         exclude: /(node_modules)/,
         options: {
             presets: [
-                [ "@babel/preset-env", { targets: config.targets, modules: false }],
+                [ "@babel/preset-env", {
+                    targets: config.targets,
+                    modules: false,
+                    useBuildIns: "usage",
+                    corejs: {
+                        version: "3.27",
+                        proposal: true
+                    }
+                }],
                 "@babel/typescript"
             ],
             plugins: [
